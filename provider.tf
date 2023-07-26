@@ -17,7 +17,27 @@ terraform {
     organization = "FOLLY"
 
     workspaces {
-      name = var.workspace
+      name = "dev-workspace"
+    }
+  }
+}
+
+terraform {
+  cloud {
+    organization = "FOLLY"
+
+    workspaces {
+      name = "qa-workspace"
+    }
+  }
+}
+
+terraform {
+  cloud {
+    organization = "FOLLY"
+
+    workspaces {
+      name = "prod-workspace"
     }
   }
 }
