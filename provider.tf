@@ -12,14 +12,14 @@ provider "aws" {
   region = "var.region"
 }
 
-terraform {
-  cloud {
-    organization = "FOLLY"
+# terraform {
+#   cloud {
+#     organization = "FOLLY
 
-    workspaces {
-      name = "dev"
-    }
-  }
-}
+#     workspaces {
+#       name = "dev"
+#     }
+#   }
+# }
 
  
