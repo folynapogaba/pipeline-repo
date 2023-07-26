@@ -21,24 +21,3 @@ terraform {
     }
   }
 }
-
-terraform {
-  cloud {
-    organization = "FOLLY"
-
-    workspaces {
-      name = "qa-workspace"
-    }
-  }
-}
-
-terraform {
-  cloud {
-    organization = "FOLLY"
-
-    workspaces {
-      name = "prod-workspace"
-    }
-  }
-}
- 
