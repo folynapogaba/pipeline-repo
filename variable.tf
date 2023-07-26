@@ -29,7 +29,7 @@ variable "azs" {
  description = "Availability Zones"
 }
 
-#variable "work_spaces" {
-#type        = string
-# description = "define different work space"
-#}
+variable "workspace" {
+type        = string
+description = "define different work space"
+}

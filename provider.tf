@@ -9,7 +9,7 @@ terraform {
 
  #Configure the AWS Provider
 provider "aws" {
-  region = "var.region"
+  region = var.region
 }
 
 terraform {
@@ -17,7 +17,7 @@ terraform {
     organization = "FOLLY"
 
     workspaces {
-      name = "dev-workspace"
+      name = var.workspace
     }
   }
 }
