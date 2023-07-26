@@ -1,0 +1,35 @@
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+providers
+
+
+terraform {
+  cloud {
+    organization = "FOLLY"
+
+    workspaces {
+      name = "dev-workspace"
+    }
+  }
+}
+
+terraform {
+  cloud {
+    organization = "FOLLY"
+
+    workspaces {
+      name = "qa-workspace"
+    }
+  }
+}
+
+terraform {
+  cloud {
+    organization = "FOLLY"
+
+    workspaces {
+      name = "prod-workspace"
+    }
+  }
+}
